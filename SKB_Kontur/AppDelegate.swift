@@ -18,6 +18,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
+        let startDate = Date()
+        UserDefaults.standard.set(startDate, forKey: "appStartDate")
+        UserDefaults.standard.set(true, forKey: "isFirstStart")
         let navController = UINavigationController()
         coordinator = MainCoordinator(navController: navController)
         coordinator?.start()

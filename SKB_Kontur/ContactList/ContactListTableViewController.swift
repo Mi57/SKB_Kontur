@@ -18,6 +18,12 @@ final class ContactListTableViewController: UITableViewController, Storyboarded 
         ai.hidesWhenStopped = true
         return ai
     }()
+    var startDate: Date {
+        return (UserDefaults.standard.value(forKey: "appStartDate") as? Date) ?? Date()
+    }
+    var isFirstStart: Bool {
+        return UserDefaults.standard.bool(forKey: "isFirstStart")
+    }
     var refresher: UIRefreshControl!
     private let searchController = UISearchController(searchResultsController: nil)
     var contacts: Results<ContactRealmObject>?{
@@ -32,10 +38,21 @@ final class ContactListTableViewController: UITableViewController, Storyboarded 
         if !refresher.isRefreshing {
             activityIndicator.startAnimating()
         }
+        let dateDiff = Date().timeIntervalSince(startDate)
+        if !isFirstStart {
+            guard dateDiff >= 60 else {
+                contacts = RealmHelper.shared.getAllContactsFromRealm()
+                activityIndicator.stopAnimating()
+                refresher.endRefreshing()
+                return
+            }
+        }
         
         ServerAPI.getContacts { (result) in
             switch result {
             case .success(_ ):
+                self.updateStartDate()
+                UserDefaults.standard.set(false, forKey: "isFirstStart")
                 self.contacts = RealmHelper.shared.getAllContactsFromRealm()
                 if self.activityIndicator.isAnimating {
                     self.activityIndicator.stopAnimating()
@@ -46,6 +63,10 @@ final class ContactListTableViewController: UITableViewController, Storyboarded 
                 UIApplication.shared.showErrorLabel(withText: "Нет подключения к сети")
             }
         }
+    }
+    
+    private func updateStartDate(){
+        UserDefaults.standard.set(Date(), forKey: "appStartDate")
     }
     
     fileprivate func setupActivityIndicator() {
