@@ -23,6 +23,12 @@ final class MainCoordinator: Coordinator {
         navigationController.pushViewController(vc, animated: false)
     }
 
-    
+    func showDetailsForContact(_ contact: ContactRealmObject?){
+        
+        let vc = ContactDetailsTableViewController.instantiate()
+        vc.coordinator = self
+        vc.contact = contact
+        navigationController.pushViewController(vc, animated: true)
+    }
     
 }

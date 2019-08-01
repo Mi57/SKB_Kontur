@@ -123,6 +123,8 @@ final class ContactListTableViewController: UITableViewController, Storyboarded 
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
+        let selectedContact = contacts?[indexPath.row]
+        coordinator?.showDetailsForContact(selectedContact)
     }
     
 }
