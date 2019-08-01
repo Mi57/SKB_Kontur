@@ -23,6 +23,8 @@
 		845BE23F22F29D1100393B8D /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845BE23E22F29D1100393B8D /* Contact.swift */; };
 		845BE24122F29D6500393B8D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845BE24022F29D6500393B8D /* Extensions.swift */; };
 		845BE24322F29F0A00393B8D /* ContactListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845BE24222F29F0A00393B8D /* ContactListTableViewCell.swift */; };
+		845BE24522F2A15300393B8D /* ContactDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845BE24422F2A15300393B8D /* ContactDetailsTableViewController.swift */; };
+		845BE24822F2A1C400393B8D /* ContactDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845BE24722F2A1C400393B8D /* ContactDetailsTableViewCell.swift */; };
 		96E5E092B026CD01CB0210EF /* Pods_SKB_Kontur.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83C9C19B1A610054B164B941 /* Pods_SKB_Kontur.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +49,8 @@
 		845BE23E22F29D1100393B8D /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		845BE24022F29D6500393B8D /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		845BE24222F29F0A00393B8D /* ContactListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListTableViewCell.swift; sourceTree = "<group>"; };
+		845BE24422F2A15300393B8D /* ContactDetailsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsTableViewController.swift; sourceTree = "<group>"; };
+		845BE24722F2A1C400393B8D /* ContactDetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsTableViewCell.swift; sourceTree = "<group>"; };
 		A2B2C174544B75A5BFF391F5 /* Pods-SKB_Kontur.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SKB_Kontur.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SKB_Kontur/Pods-SKB_Kontur.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -105,6 +109,8 @@
 				845BE23422F29A9200393B8D /* ContactRealmObject.swift */,
 				845BE23022F299A800393B8D /* Coordinator.swift */,
 				845BE21F22F2964400393B8D /* Main.storyboard */,
+				845BE24422F2A15300393B8D /* ContactDetailsTableViewController.swift */,
+				845BE24722F2A1C400393B8D /* ContactDetailsTableViewCell.swift */,
 				845BE22522F2964500393B8D /* Assets.xcassets */,
 				845BE22722F2964500393B8D /* LaunchScreen.storyboard */,
 				845BE22A22F2964500393B8D /* Info.plist */,
@@ -247,6 +253,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				845BE24822F2A1C400393B8D /* ContactDetailsTableViewCell.swift in Sources */,
 				845BE23722F29C1200393B8D /* ServerClient.swift in Sources */,
 				845BE23D22F29CB900393B8D /* RealmHelper.swift in Sources */,
 				845BE23122F299A800393B8D /* Coordinator.swift in Sources */,
@@ -254,6 +261,7 @@
 				845BE22422F2964400393B8D /* SKB_Kontur.xcdatamodeld in Sources */,
 				845BE23522F29A9200393B8D /* ContactRealmObject.swift in Sources */,
 				845BE23F22F29D1100393B8D /* Contact.swift in Sources */,
+				845BE24522F2A15300393B8D /* ContactDetailsTableViewController.swift in Sources */,
 				845BE24122F29D6500393B8D /* Extensions.swift in Sources */,
 				845BE23322F29A5A00393B8D /* MainCoordinator.swift in Sources */,
 				845BE21C22F2964400393B8D /* AppDelegate.swift in Sources */,
