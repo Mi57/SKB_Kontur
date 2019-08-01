@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ContactListTableViewController: UITableViewController, Storyboarded {
+final class ContactListTableViewController: UITableViewController, Storyboarded {
 
     weak var coordinator: MainCoordinator?
 

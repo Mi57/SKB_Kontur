@@ -9,7 +9,7 @@
 import Foundation
 import RealmSwift
 
-class ContactRealmObject: Object {
+final class ContactRealmObject: Object {
     
     @objc dynamic var id: String = ""
     @objc dynamic var name: String = ""
