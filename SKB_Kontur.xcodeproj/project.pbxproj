@@ -94,6 +94,7 @@
 		845BE21A22F2964400393B8D /* SKB_Kontur */ = {
 			isa = PBXGroup;
 			children = (
+				845BE22A22F2964500393B8D /* Info.plist */,
 				845BE21B22F2964400393B8D /* AppDelegate.swift */,
 				845BE24922F2A65400393B8D /* Coordinator */,
 				845BE24A22F2A67700393B8D /* ContactList */,
@@ -141,7 +142,6 @@
 				845BE21F22F2964400393B8D /* Main.storyboard */,
 				845BE22522F2964500393B8D /* Assets.xcassets */,
 				845BE22722F2964500393B8D /* LaunchScreen.storyboard */,
-				845BE22A22F2964500393B8D /* Info.plist */,
 			);
 			path = SupportingFiles;
 			sourceTree = "<group>";
