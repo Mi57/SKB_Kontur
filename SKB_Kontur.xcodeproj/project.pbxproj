@@ -8,11 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		845BE21C22F2964400393B8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845BE21B22F2964400393B8D /* AppDelegate.swift */; };
-		845BE21E22F2964400393B8D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845BE21D22F2964400393B8D /* ViewController.swift */; };
+		845BE21E22F2964400393B8D /* ContactListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845BE21D22F2964400393B8D /* ContactListTableViewController.swift */; };
 		845BE22122F2964400393B8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 845BE21F22F2964400393B8D /* Main.storyboard */; };
 		845BE22422F2964400393B8D /* SKB_Kontur.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 845BE22222F2964400393B8D /* SKB_Kontur.xcdatamodeld */; };
 		845BE22622F2964500393B8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 845BE22522F2964500393B8D /* Assets.xcassets */; };
 		845BE22922F2964500393B8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 845BE22722F2964500393B8D /* LaunchScreen.storyboard */; };
+		845BE23122F299A800393B8D /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845BE23022F299A800393B8D /* Coordinator.swift */; };
+		845BE23322F29A5A00393B8D /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845BE23222F29A5A00393B8D /* MainCoordinator.swift */; };
+		845BE23522F29A9200393B8D /* ContactRealmObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845BE23422F29A9200393B8D /* ContactRealmObject.swift */; };
 		96E5E092B026CD01CB0210EF /* Pods_SKB_Kontur.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83C9C19B1A610054B164B941 /* Pods_SKB_Kontur.framework */; };
 /* End PBXBuildFile section */
 
@@ -21,12 +24,15 @@
 		83C9C19B1A610054B164B941 /* Pods_SKB_Kontur.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SKB_Kontur.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		845BE21822F2964400393B8D /* SKB_Kontur.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SKB_Kontur.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		845BE21B22F2964400393B8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		845BE21D22F2964400393B8D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		845BE21D22F2964400393B8D /* ContactListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListTableViewController.swift; sourceTree = "<group>"; };
 		845BE22022F2964400393B8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		845BE22322F2964400393B8D /* SKB_Kontur.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SKB_Kontur.xcdatamodel; sourceTree = "<group>"; };
 		845BE22522F2964500393B8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		845BE22822F2964500393B8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		845BE22A22F2964500393B8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		845BE23022F299A800393B8D /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		845BE23222F29A5A00393B8D /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		845BE23422F29A9200393B8D /* ContactRealmObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactRealmObject.swift; sourceTree = "<group>"; };
 		A2B2C174544B75A5BFF391F5 /* Pods-SKB_Kontur.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SKB_Kontur.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SKB_Kontur/Pods-SKB_Kontur.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -73,7 +79,10 @@
 			isa = PBXGroup;
 			children = (
 				845BE21B22F2964400393B8D /* AppDelegate.swift */,
-				845BE21D22F2964400393B8D /* ViewController.swift */,
+				845BE23222F29A5A00393B8D /* MainCoordinator.swift */,
+				845BE21D22F2964400393B8D /* ContactListTableViewController.swift */,
+				845BE23422F29A9200393B8D /* ContactRealmObject.swift */,
+				845BE23022F299A800393B8D /* Coordinator.swift */,
 				845BE21F22F2964400393B8D /* Main.storyboard */,
 				845BE22522F2964500393B8D /* Assets.xcassets */,
 				845BE22722F2964500393B8D /* LaunchScreen.storyboard */,
@@ -217,8 +226,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				845BE21E22F2964400393B8D /* ViewController.swift in Sources */,
+				845BE23122F299A800393B8D /* Coordinator.swift in Sources */,
+				845BE21E22F2964400393B8D /* ContactListTableViewController.swift in Sources */,
 				845BE22422F2964400393B8D /* SKB_Kontur.xcdatamodeld in Sources */,
+				845BE23522F29A9200393B8D /* ContactRealmObject.swift in Sources */,
+				845BE23322F29A5A00393B8D /* MainCoordinator.swift in Sources */,
 				845BE21C22F2964400393B8D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

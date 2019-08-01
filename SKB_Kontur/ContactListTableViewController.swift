@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ContactListTableViewController.swift
 //  SKB_Kontur
 //
 //  Created by Admin on 01/08/2019.
@@ -8,7 +8,9 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ContactListTableViewController: UITableViewController, Storyboarded {
+
+    weak var coordinator: MainCoordinator?
 
     override func viewDidLoad() {
         super.viewDidLoad()
