@@ -13,9 +13,12 @@
 		845BE22422F2964400393B8D /* SKB_Kontur.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 845BE22222F2964400393B8D /* SKB_Kontur.xcdatamodeld */; };
 		845BE22622F2964500393B8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 845BE22522F2964500393B8D /* Assets.xcassets */; };
 		845BE22922F2964500393B8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 845BE22722F2964500393B8D /* LaunchScreen.storyboard */; };
+		96E5E092B026CD01CB0210EF /* Pods_SKB_Kontur.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83C9C19B1A610054B164B941 /* Pods_SKB_Kontur.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C80341447F384D95A0DAE41 /* Pods-SKB_Kontur.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SKB_Kontur.release.xcconfig"; path = "Pods/Target Support Files/Pods-SKB_Kontur/Pods-SKB_Kontur.release.xcconfig"; sourceTree = "<group>"; };
+		83C9C19B1A610054B164B941 /* Pods_SKB_Kontur.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SKB_Kontur.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		845BE21822F2964400393B8D /* SKB_Kontur.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SKB_Kontur.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		845BE21B22F2964400393B8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		845BE21D22F2964400393B8D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		845BE22522F2964500393B8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		845BE22822F2964500393B8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		845BE22A22F2964500393B8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2B2C174544B75A5BFF391F5 /* Pods-SKB_Kontur.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SKB_Kontur.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SKB_Kontur/Pods-SKB_Kontur.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96E5E092B026CD01CB0210EF /* Pods_SKB_Kontur.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3CEDA82E74CBF28E3807F086 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A2B2C174544B75A5BFF391F5 /* Pods-SKB_Kontur.debug.xcconfig */,
+				3C80341447F384D95A0DAE41 /* Pods-SKB_Kontur.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		845BE20F22F2964400393B8D = {
 			isa = PBXGroup;
 			children = (
 				845BE21A22F2964400393B8D /* SKB_Kontur */,
 				845BE21922F2964400393B8D /* Products */,
+				3CEDA82E74CBF28E3807F086 /* Pods */,
+				A1D0C7D0D1AC950A168BDD75 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +83,14 @@
 			path = SKB_Kontur;
 			sourceTree = "<group>";
 		};
+		A1D0C7D0D1AC950A168BDD75 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				83C9C19B1A610054B164B941 /* Pods_SKB_Kontur.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 845BE22D22F2964500393B8D /* Build configuration list for PBXNativeTarget "SKB_Kontur" */;
 			buildPhases = (
+				0B0B10341C96510919002141 /* [CP] Check Pods Manifest.lock */,
 				845BE21422F2964400393B8D /* Sources */,
 				845BE21522F2964400393B8D /* Frameworks */,
 				845BE21622F2964400393B8D /* Resources */,
+				4E2F150C786A989BD94776E0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +158,59 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0B0B10341C96510919002141 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SKB_Kontur-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4E2F150C786A989BD94776E0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SKB_Kontur/Pods-SKB_Kontur-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SKB_Kontur/Pods-SKB_Kontur-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		845BE21422F2964400393B8D /* Sources */ = {
@@ -284,11 +363,13 @@
 		};
 		845BE22E22F2964500393B8D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2B2C174544B75A5BFF391F5 /* Pods-SKB_Kontur.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D7GYZ5AX89;
 				INFOPLIST_FILE = SKB_Kontur/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,11 +383,13 @@
 		};
 		845BE22F22F2964500393B8D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C80341447F384D95A0DAE41 /* Pods-SKB_Kontur.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D7GYZ5AX89;
 				INFOPLIST_FILE = SKB_Kontur/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
