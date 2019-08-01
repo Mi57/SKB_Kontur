@@ -164,7 +164,7 @@ extension UIApplication {
         
         DispatchQueue.main.async {
             let label = UILabel(frame: CGRect(x: 32, y: UIScreen.main.bounds.height, width: UIScreen.main.bounds.width - 64, height: 44))
-            label.backgroundColor = backgroundColor//UIColor.darkGray.withAlphaComponent(0.5)
+            label.backgroundColor = backgroundColor
             label.text = message
             label.textColor = textColor
             label.textAlignment = .center

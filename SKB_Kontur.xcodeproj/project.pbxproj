@@ -95,25 +95,73 @@
 			isa = PBXGroup;
 			children = (
 				845BE21B22F2964400393B8D /* AppDelegate.swift */,
+				845BE24922F2A65400393B8D /* Coordinator */,
+				845BE24A22F2A67700393B8D /* ContactList */,
+				845BE24D22F2A6ED00393B8D /* ContactDetails */,
+				845BE24B22F2A6A200393B8D /* Networking */,
+				845BE24E22F2A70B00393B8D /* Models */,
+				845BE23C22F29CB900393B8D /* RealmHelper.swift */,
+				845BE24022F29D6500393B8D /* Extensions.swift */,
+				845BE24C22F2A6CE00393B8D /* SupportingFiles */,
+			);
+			path = SKB_Kontur;
+			sourceTree = "<group>";
+		};
+		845BE24922F2A65400393B8D /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
 				845BE23022F299A800393B8D /* Coordinator.swift */,
 				845BE23222F29A5A00393B8D /* MainCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		845BE24A22F2A67700393B8D /* ContactList */ = {
+			isa = PBXGroup;
+			children = (
 				845BE21D22F2964400393B8D /* ContactListTableViewController.swift */,
 				845BE24222F29F0A00393B8D /* ContactListTableViewCell.swift */,
+			);
+			path = ContactList;
+			sourceTree = "<group>";
+		};
+		845BE24B22F2A6A200393B8D /* Networking */ = {
+			isa = PBXGroup;
+			children = (
 				845BE23622F29C1200393B8D /* ServerClient.swift */,
 				845BE23822F29C3B00393B8D /* Constants.swift */,
 				845BE23A22F29C9600393B8D /* ServerAPI.swift */,
-				845BE23C22F29CB900393B8D /* RealmHelper.swift */,
-				845BE23E22F29D1100393B8D /* Contact.swift */,
-				845BE24022F29D6500393B8D /* Extensions.swift */,
-				845BE23422F29A9200393B8D /* ContactRealmObject.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		845BE24C22F2A6CE00393B8D /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
 				845BE21F22F2964400393B8D /* Main.storyboard */,
-				845BE24422F2A15300393B8D /* ContactDetailsTableViewController.swift */,
-				845BE24722F2A1C400393B8D /* ContactDetailsTableViewCell.swift */,
 				845BE22522F2964500393B8D /* Assets.xcassets */,
 				845BE22722F2964500393B8D /* LaunchScreen.storyboard */,
 				845BE22A22F2964500393B8D /* Info.plist */,
 			);
-			path = SKB_Kontur;
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		845BE24D22F2A6ED00393B8D /* ContactDetails */ = {
+			isa = PBXGroup;
+			children = (
+				845BE24422F2A15300393B8D /* ContactDetailsTableViewController.swift */,
+				845BE24722F2A1C400393B8D /* ContactDetailsTableViewCell.swift */,
+			);
+			path = ContactDetails;
+			sourceTree = "<group>";
+		};
+		845BE24E22F2A70B00393B8D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				845BE23E22F29D1100393B8D /* Contact.swift */,
+				845BE23422F29A9200393B8D /* ContactRealmObject.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		A1D0C7D0D1AC950A168BDD75 /* Frameworks */ = {
