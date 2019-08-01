@@ -22,6 +22,7 @@
 		845BE23D22F29CB900393B8D /* RealmHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845BE23C22F29CB900393B8D /* RealmHelper.swift */; };
 		845BE23F22F29D1100393B8D /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845BE23E22F29D1100393B8D /* Contact.swift */; };
 		845BE24122F29D6500393B8D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845BE24022F29D6500393B8D /* Extensions.swift */; };
+		845BE24322F29F0A00393B8D /* ContactListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845BE24222F29F0A00393B8D /* ContactListTableViewCell.swift */; };
 		96E5E092B026CD01CB0210EF /* Pods_SKB_Kontur.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83C9C19B1A610054B164B941 /* Pods_SKB_Kontur.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +46,7 @@
 		845BE23C22F29CB900393B8D /* RealmHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmHelper.swift; sourceTree = "<group>"; };
 		845BE23E22F29D1100393B8D /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		845BE24022F29D6500393B8D /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		845BE24222F29F0A00393B8D /* ContactListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListTableViewCell.swift; sourceTree = "<group>"; };
 		A2B2C174544B75A5BFF391F5 /* Pods-SKB_Kontur.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SKB_Kontur.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SKB_Kontur/Pods-SKB_Kontur.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,6 +95,7 @@
 				845BE21B22F2964400393B8D /* AppDelegate.swift */,
 				845BE23222F29A5A00393B8D /* MainCoordinator.swift */,
 				845BE21D22F2964400393B8D /* ContactListTableViewController.swift */,
+				845BE24222F29F0A00393B8D /* ContactListTableViewCell.swift */,
 				845BE23622F29C1200393B8D /* ServerClient.swift */,
 				845BE23822F29C3B00393B8D /* Constants.swift */,
 				845BE23A22F29C9600393B8D /* ServerAPI.swift */,
@@ -255,6 +258,7 @@
 				845BE23322F29A5A00393B8D /* MainCoordinator.swift in Sources */,
 				845BE21C22F2964400393B8D /* AppDelegate.swift in Sources */,
 				845BE23B22F29C9600393B8D /* ServerAPI.swift in Sources */,
+				845BE24322F29F0A00393B8D /* ContactListTableViewCell.swift in Sources */,
 				845BE23922F29C3B00393B8D /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
